@@ -12,9 +12,9 @@ const Footer = () => {
                     <div className="mb-4 lg:mb-0 space-y-3">
                         <div className="flex gap-3 items-center">
                         <img className="w-6 h-6" src="https://i.ibb.co/LptmthK/image.png" alt="Social Icon 1" />
-                        <h1 className="text-xl font-semibold">BlogsHunts</h1>
+                        <h1 className="text-xl font-semibold">Hyascka</h1>
                         </div>
-                        <p className="text-sm">BlogsHunts, your go-to hub for digital marketing excellence. Unleashing insights and strategies in a concise 150 characters. Elevate your online presence with us!</p>
+                        <p className="text-sm">Hyascka is a dynamic digital marketing platform, fostering innovation and expertise in online promotion. Dive into a world of strategic insights, trends, and tools, empowering your digital journey with concise, impactful guidance.</p>
                     </div>
 
                     {/* 2nd Section: Resources */}
@@ -63,7 +63,7 @@ const Footer = () => {
 
             </footer>
             {/* Copyright Information */}
-            <p className="text-sm text-white p-3 justify-center text-center bg-gray-700">&copy; {currentYear} BlogsHunts. All rights reserved.</p>
+            <p className="text-sm text-white p-3 justify-center text-center bg-gray-700">&copy; {currentYear} Hyascka. All rights reserved.</p>
         </div>
     );
 };

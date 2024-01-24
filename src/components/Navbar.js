@@ -28,7 +28,7 @@ const navLinks = [
 const Navbar = () => {
     return (
         <nav className="flex justify-between items-center container mx-auto">
-            <h1 className="text-xl font-semibold">BlogsHunts</h1>
+           <Link href='/'> <h1 className="text-xl font-semibold">Hyascka</h1></Link>
             <ul className="flex justify-center items-center">
                 {
                     navLinks.map(({ path, title }) => (

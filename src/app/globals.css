@@ -2,4 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@btn1: 'bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500';
+
+.btn-3 {
+    --c: no-repeat linear-gradient(#1095c1 0 0);
+    background:
+      var(--c) calc(-100% + var(--i, 0) * 100%) 100% / 50% calc(100% * var(--i, 0) + .08em),
+      var(--c) calc(200% - var(--i, 0) * 100%) 0 / 50% calc(100% * var(--i, 0) + .08em);
+    transition: .3s calc(var(--i, 0) * .3s), background-position .3s calc(.3s - var(--i, 0) * .3s);
+  }
+  
+  .btn-3:hover {
+    --i: 1;
+  }
