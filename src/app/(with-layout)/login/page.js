@@ -70,8 +70,19 @@ const LogIn = () => {
                 {/* OR */}
 
 
-                <div className="">
+                <div className="flex items-center justify-center  ">
+                    {/* Left Border */}
+                    <div className="border-t-2 border-purple-700"></div>
 
+                    {/* Content in the Middle */}
+                    <div className="p-8">
+                        {/* Your content goes here */}
+                        <h2 className="text-2xl font-semibold mb-4">OR</h2>
+                        {/* ... other login form elements */}
+                    </div>
+
+                    {/* Right Border */}
+                    <div className="border-l-2 h-1/2"></div>
                 </div>
 
                 {/* Social Login Section */}
