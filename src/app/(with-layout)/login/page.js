@@ -6,7 +6,7 @@ import { FaBackward } from "react-icons/fa";
 
 const LogIn = () => {
     return (
-        <div className="container mx-auto h-screen">
+        <div className="container mx-auto ">
 
             <div className=" font-semibold flex justify-between items-center p-4">
                 <Link href='/' className="flex items-center gap-4" ><FaBackward /> <h3>Back to Home</h3></Link>
@@ -108,7 +108,7 @@ const LogIn = () => {
             {/* Forgotten Password */}
             <Link href='/'> <p className="text-center mt-16  uppercase font-medium">Forgotten password?</p></Link>
 
-            <div className="text-center mt-10">
+            <div className="text-center mt-10 mb-10">
                 <p>Secure Login with reCAPTCHA subject to Google</p>
                 <p>Terms & Privacy</p>
             </div>
