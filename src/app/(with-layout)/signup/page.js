@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaBackward } from "react-icons/fa";
+import { FaBackward, FaForward } from "react-icons/fa";
 
 
 const SignUpPage = () => {
@@ -8,7 +8,7 @@ const SignUpPage = () => {
 
             <div className=" font-semibold flex justify-between items-center p-4">
                 <Link href='/' className="flex items-center gap-4" ><FaBackward /> <h3>Back to Home</h3></Link>
-                <Link href='/login'>Already have an Account</Link>
+                <Link href='/login' className="flex items-center gap-4"><h3>Already have an Account</h3> <FaForward /></Link>
 
             </div>
             {/* img optimize */}
@@ -121,15 +121,15 @@ const SignUpPage = () => {
 
                 {/* Social Login Section */}
                 <div className="space-y-3">
-                    <div className="flex items-center border-gray-700 border rounded-md justify-between px-16 p-2">
+                    <div className="flex items-center border-gray-700 border rounded-md justify-between px-8 mx-auto md:px-15 lg:px-16 p-2">
                         <img className="w-8 h-8" src="https://i.ibb.co/SKdhz0J/image.png" alt="Login Google" />
                         <p className="text-xs font-semibold">Sign In With Google</p>
                     </div>
-                    <div className="flex items-center border-gray-700 border rounded-md justify-between px-16 p-2">
+                    <div className="flex items-center border-gray-700 border rounded-md justify-between px-8 mx-auto md:px-15 lg:px-16 p-2">
                         <img className="w-8 h-8" src="https://i.ibb.co/9qXCrfs/image.png" alt="Login Google" />
                         <p className="text-xs font-semibold">Sign In With Facebook</p>
                     </div>
-                    <div className="flex items-center border-gray-700 border rounded-md justify-between px-16 p-2">
+                    <div className="flex items-center border-gray-700 border rounded-md justify-between px-8 mx-auto md:px-15 lg:px-16 p-2">
                         <img className="w-8 h-8" src="https://i.ibb.co/JnD2t8y/image.png" alt="Login Google" />
                         <p className="text-xs font-semibold">Sign In With Github</p>
                     </div>

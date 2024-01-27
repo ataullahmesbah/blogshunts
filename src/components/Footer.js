@@ -21,7 +21,7 @@ const Footer = () => {
                     <div className="mb-4 lg:mb-0">
                         <h2 className="text-xl font-semibold mb-2 border-b  border-green-400">Resources</h2>
                         <ul className="text-sm space-y-2">
-                            <li className="hover:text-gray-500 cursor-pointer">Contact Us</li>
+                           <Link href='/contactus'> <li className="hover:text-gray-500 cursor-pointer">Contact Us</li></Link>
                             <li className="hover:text-gray-500 cursor-pointer">Blogs</li>
                             <li className="hover:text-gray-500 cursor-pointer">About Us</li>
                             <li className="hover:text-gray-500 cursor-pointer">FAQs</li>

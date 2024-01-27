@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaBackward } from "react-icons/fa";
+import { FaBackward, FaForward } from "react-icons/fa";
 
 
 
@@ -10,7 +10,7 @@ const LogIn = () => {
 
             <div className=" font-semibold flex justify-between items-center p-4">
                 <Link href='/' className="flex items-center gap-4" ><FaBackward /> <h3>Back to Home</h3></Link>
-                <Link href='/signup'>Create an Account</Link>
+                <Link href='/signup' className="flex items-center gap-4"><h3>Create an Account</h3> <FaForward /> </Link>
 
             </div>
             {/* img optimize */}
