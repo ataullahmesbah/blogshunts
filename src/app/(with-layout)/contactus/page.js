@@ -1,3 +1,8 @@
+export const metadata = {
+    title: 'Contact Us | Hyascka',
+    description: 'Contact Hyascka to get in touch with our team. Whether you have questions, feedback, or inquiries, we are here to help. Fill out the contact form or use our provided office information to reach us. We look forward to hearing from you!',
+};
+
 
 import { FaLocationArrow, FaMailBulk, FaPhone, FaSearchLocation, FaTelegram } from "react-icons/fa";
 
@@ -6,7 +11,7 @@ const ContactPage = () => {
     return (
 
 
-        <div className="mt-5 mb-8">
+        <div className="mt-5 mb-16">
 
 
 
@@ -20,25 +25,47 @@ const ContactPage = () => {
 
             <div className="container mx-auto mt-10">
 
+
+                {/* Box Modules Talk */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-center p-3">
 
-                    <div className="border-2 border-gray-600 p-8 lg:w-3/4 lg:py-16  rounded-md text-center">
-                        <h2 className="font-semibold text-2xl lg:text-2xl">Help Desk</h2>
+                    <div className="border-t-4 border-b-2 border-l-2 border-r-2 border-blue-500 p-8 lg:w-3/4 lg:py-16 rounded-md text-center transition-transform transform hover:scale-105">
+                        <div className="text-4xl mb-4">
+                            <span role="img" aria-label="Help Desk">
+                                🛠️
+                            </span>
+                        </div>
+                        <h2 className="font-semibold text-xl lg:text-2xl">Help Desk</h2>
+                        <p className="text-gray-600 mt-2">Get assistance from our help desk team.</p>
                     </div>
 
-                    <div className="border-2 border-gray-600 p-8 lg:w-3/4 lg:py-16 rounded-md text-center mt-4 md:mt-0">
-                        <h2 className="font-semibold text-2xl lg:text-2xl">Support Center</h2>
+                    <div className="border-t-4 border-b-2 border-l-2 border-r-2 border-green-500 p-8 lg:w-3/4 lg:py-16 rounded-md text-center mt-4 md:mt-0 transition-transform transform hover:scale-105">
+                        <div className="text-4xl mb-4">
+                            <span role="img" aria-label="Support Center">
+                                🌐
+                            </span>
+                        </div>
+                        <h2 className="font-semibold text-xl lg:text-2xl">Support Center</h2>
+                        <p className="text-gray-600 mt-2">Explore our support resources and FAQs.</p>
                     </div>
 
-                    <div className="border-2 border-gray-600 p-8 lg:w-3/4 lg:py-16 rounded-md text-center mt-4 lg:mt-0">
-                        <h2 className="font-semibold text-2xl lg:text-2xl">Message Information</h2>
+                    <div className="border-t-4 border-b-2 border-l-2 border-r-2 border-purple-500 p-8 lg:w-3/4 lg:py-16 rounded-md text-center mt-4 lg:mt-0 transition-transform transform hover:scale-105">
+                        <div className="text-4xl mb-4">
+                            <span role="img" aria-label="Message Information">
+                                📧
+                            </span>
+                        </div>
+                        <h2 className="font-semibold text-xl lg:text-2xl">Message Information</h2>
+                        <p className="text-gray-600 mt-2">Learn about our latest updates and messages.</p>
                     </div>
 
                 </div>
 
+
+
                 {/* contact form */}
-                <div className="">
-                    <div className="text-center mb-8 mt-8 space-y-2">
+                <div className="mt-10 lg:mt-16">
+                    <div className="text-center mb-8 mt-8 space-y-2 lg:mb-16">
                         <p className="text-2xl font-semibold">Let’s Talk!</p>
                         <p className="text-xl">Give us a call or fill out the form below. We’d love to hear from you!</p>
                     </div>
