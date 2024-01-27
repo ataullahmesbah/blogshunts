@@ -1,16 +1,14 @@
-import Image from "next/image";
 import Link from "next/link";
 import { FaBackward } from "react-icons/fa";
 
 
-
-const LogIn = () => {
+const SignUpPage = () => {
     return (
         <div className="container mx-auto ">
 
             <div className=" font-semibold flex justify-between items-center p-4">
                 <Link href='/' className="flex items-center gap-4" ><FaBackward /> <h3>Back to Home</h3></Link>
-                <Link href='/signup'>Create an Account</Link>
+                <Link href='/login'>Already have an Account</Link>
 
             </div>
             {/* img optimize */}
@@ -26,13 +24,41 @@ const LogIn = () => {
             {/* img optimize */}
 
 
-            <h2 className="text-xl font-semibold text-center">Log into Hyascka</h2>
+            <h2 className="text-xl font-semibold text-center">Sign Up into Hyascka</h2>
 
 
             {/* Log section */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-between items-center mx-auto mt-8 p-4 lg:w-3/4">
 
                 <div className="">
+
+                    <div className="flex gap-2 items-center">
+                        {/* First Name Input */}
+                        <div className="mb-4">
+                            <label htmlFor="name" className="block text-gray-600 mb-2">First Name</label>
+                            <input
+                                type="name"
+                                id="name"
+                                name="name"
+                                placeholder="Your First Name"
+                                className="w-full px-4 py-2 border rounded focus:outline-none focus:border-gray-500 bg-gray-100"
+                            />
+                        </div>
+                        {/* Last Name Input */}
+
+                        <div className="mb-4">
+                            <label htmlFor="name" className="block text-gray-600 mb-2">Last Name</label>
+                            <input
+                                type="name"
+                                id="name"
+                                name="name"
+                                placeholder="Your Last Name"
+                                className="w-full px-4 py-2 border rounded focus:outline-none focus:border-gray-500 bg-gray-100"
+                            />
+                        </div>
+
+                    </div>
+
 
                     {/* Email Input */}
                     <div className="mb-4">
@@ -57,13 +83,24 @@ const LogIn = () => {
                             className="w-full px-4 py-2 border rounded focus:outline-none focus:border-gray-500 bg-gray-100"
                         />
                     </div>
+                    {/* Confirm Password Input */}
+                    <div className="mb-6">
+                        <label htmlFor="password" className="block text-gray-600 mb-2 ">Confirm Password</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Confirm Password"
+                            className="w-full px-4 py-2 border rounded focus:outline-none focus:border-gray-500 bg-gray-100"
+                        />
+                    </div>
 
                     {/* Submit Button */}
                     <p
                         type="submit"
                         className="bg-black text-center text-white px-4 py-2 rounded hover:bg-gray-800 focus:outline-none focus:shadow-outline-blue"
                     >
-                        Log In
+                        Sign Up
                     </p>
 
                 </div>
@@ -106,7 +143,7 @@ const LogIn = () => {
 
 
             {/* Forgotten Password */}
-            <Link href='/'> <p className="text-center mt-16  uppercase font-medium">Forgotten password?</p></Link>
+            {/* <Link href='/'> <p className="text-center mt-16  uppercase font-medium">Forgotten password?</p></Link> */}
 
             <div className="text-center mt-10 mb-10">
                 <p>Secure Login with reCAPTCHA subject to Google</p>
@@ -120,4 +157,4 @@ const LogIn = () => {
     );
 };
 
-export default LogIn;
+export default SignUpPage;
