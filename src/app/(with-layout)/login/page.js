@@ -3,6 +3,10 @@ import Link from "next/link";
 import { FaBackward, FaForward } from "react-icons/fa";
 
 
+export const metadata = {
+    title: 'Login | Hyascka',
+    description: 'Log in to access your account on Hyascka. Enter your credentials to securely sign in and manage your account.',
+};
 
 const LogIn = () => {
     return (

@@ -2,6 +2,13 @@ import Link from "next/link";
 import { FaBackward, FaForward } from "react-icons/fa";
 
 
+
+export const metadata = {
+    title: 'Sign Up | Hyascka',
+    description: 'Create a new account on Hyascka. Sign up to access exclusive features and personalized content. Join us and get started!',
+};
+
+
 const SignUpPage = () => {
     return (
         <div className="container mx-auto ">
