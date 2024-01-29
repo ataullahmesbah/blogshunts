@@ -108,7 +108,7 @@ const AboutPage = () => {
 
 
             <div className="grid grid-cols-2 container mx-auto m-14 px-10 lg:gap-10 justify-between">
-            <div className="space-y-3">
+                <div className="space-y-3">
                     <h4 className="lg:text-4xl md:text-3xl text-2xl font-semibold ">Services and Expertise</h4>
                     <li>Clearly outline the digital marketing and web development services you offer.
                     </li>
@@ -126,9 +126,31 @@ const AboutPage = () => {
 
                 </div>
 
-                
+
             </div>
 
+
+{/* extra */}
+
+            <div className="flex">
+                {/* Left side content */}
+                <div className="bg-gray-100 w-full  p-80">
+                    <h1 className="text-4xl font-bold text-black">Left Side Content</h1>
+                </div>
+
+                {/* Container for the gradient background */}
+                <div className="relative bg-gradient-to-r from-cyan-700 via-cyan-700 to-cyan-700  p-80">
+                    {/* Content in the gradient background */}
+                    <h1 className="text-4xl font-bold text-white">Your Header Title</h1>
+
+                    {/* Skewed div centered within the container */}
+
+                   
+                    
+                </div>
+
+                
+            </div>
 
 
         </div>
