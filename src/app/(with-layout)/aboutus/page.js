@@ -4,6 +4,8 @@ import MarqueeSection from "@/components/Marquee";
 import Image from "next/image";
 import Link from "next/link";
 
+import aboutimg from '@/assets/hyascka-about-us.jpg'
+
 import { FaChevronRight, FaForward } from "react-icons/fa";
 
 export const metadata = {
@@ -47,9 +49,9 @@ const AboutPage = () => {
 
                     {/* right side */}
                     <div className="lg:w-1/2 mt-4 lg:mt-0">
-                        <img className="rounded-md w-full" src="https://i.ibb.co/GWt1NTg/image.png" alt="Hyascka About Us" />
+                        {/* <img className="rounded-md w-full" src="https://i.ibb.co/GWt1NTg/image.png" alt="Hyascka About Us" /> */}
 
-                        {/* <Image src='https://i.ibb.co/GWt1NTg/image.jpg' alt="about us" width={100} height={20}/> */}
+                        <Image className="rounded-md " src={aboutimg} alt="hyascka about us" width={600} height={381.5} placeholder="blur" />
                     </div>
 
                 </div>
