@@ -1,4 +1,5 @@
 import Banner from "@/components/Home/Banner";
+import ExcellenceHub from "@/components/Home/ExcellenceHub";
 import Services from "@/components/Home/Services";
 import Image from "next/image";
 
@@ -13,6 +14,7 @@ export default function Home() {
     <main className="">
       <Banner />
       <Services />
+      <ExcellenceHub />
       {/*  */}
     </main>
   );

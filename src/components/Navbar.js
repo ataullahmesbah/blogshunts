@@ -12,8 +12,8 @@ const navLinks = [
         title: 'About'
     },
     {
-        path: ' /features',
-        title: 'Features'
+        path: ' /services',
+        title: 'Services'
     },
     {
         path: ' /blogs',
@@ -28,7 +28,7 @@ const navLinks = [
 const Navbar = () => {
     return (
         <nav className="flex justify-between items-center container mx-auto">
-           <Link href='/'> <h1 className="text-xl font-semibold">Hyascka</h1></Link>
+            <Link href='/'> <h1 className="text-xl font-semibold">Hyascka</h1></Link>
             <ul className="flex justify-center items-center">
                 {
                     navLinks.map(({ path, title }) => (
