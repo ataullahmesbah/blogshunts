@@ -9,7 +9,7 @@ import bannerPartner from '@/assets/banner/hyascka-bing-partnaship.webp';
 const Banner = () => {
     return (
         <div className="bg-gray-50">
-            <div className="relative flex flex-col lg:flex-row container mx-auto items-center justify-between pt-16 pb-16 px-2">
+            <div className="relative flex flex-col lg:flex-row container mx-auto items-center justify-between pt-16 pb-16 px-2 lg:gap-10">
                 {/* left side text */}
                 <div className="lg:w-1/2 lg:pr-10 relative z-10 space-y-3 text-center lg:text-left">
                     <h1 className="lg:text-5xl md:text-4xl text-3xl font-semibold mb-4">

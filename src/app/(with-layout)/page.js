@@ -1,6 +1,8 @@
+import Accordion from "@/components/Home/Accordion";
 import Banner from "@/components/Home/Banner";
 import ExcellenceHub from "@/components/Home/ExcellenceHub";
 import Services from "@/components/Home/Services";
+import TeamWork from "@/components/Home/TeamWork";
 import Image from "next/image";
 
 export const metadata = {
@@ -15,6 +17,7 @@ export default function Home() {
       <Banner />
       <Services />
       <ExcellenceHub />
+      <TeamWork />
       {/*  */}
     </main>
   );
