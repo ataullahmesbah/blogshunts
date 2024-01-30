@@ -1,4 +1,5 @@
 import Banner from "@/components/Home/Banner";
+import Services from "@/components/Home/Services";
 import Image from "next/image";
 
 export const metadata = {
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <main className="">
       <Banner />
+      <Services />
       {/*  */}
     </main>
   );

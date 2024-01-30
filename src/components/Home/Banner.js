@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaArrowDown, FaChevronRight } from "react-icons/fa";
 import { HiArrowLongDown } from "react-icons/hi2";
-import bannerImg from '@/assets/hyascka-official-team-meet.jpeg'
+import bannerImg from '@/assets/banner/hyascka-official-team-meet.jpeg';
+import bannerPartner from '@/assets/banner/hyascka-bing-partnaship.webp';
 
 
 const Banner = () => {
@@ -50,10 +51,35 @@ const Banner = () => {
                     <div className="w-56 h-56 bg-blue-50 rounded-full"></div>
                 </div>
 
-                {/* right side image */}
+                {/* right side images */}
                 <div className="lg:w-1/2 mt-5 lg:mt-0 relative z-10">
-                    <Image className="rounded-md" src={bannerImg} alt="hyascka about us" width={600} height={381.5} placeholder="blur" />
+                    {/* Move the second image above the first image */}
+                    <Image
+                        className="rounded-lg block absolute bottom-0 right-0 hidden lg:block lg:-mr-20 lg:mt-60 xl:-mt-20 xl:-mr-24"
+                        src={bannerPartner}
+                        alt="hyascka about us"
+                        width={400}
+                        placeholder="blur"
+                    />
+                    <Image
+                        className="rounded-md block md:hidden" // Hide on mobile and tablet devices
+                        src={bannerImg}
+                        alt="hyascka about us"
+                        width={600}
+                        height={381.5}
+                        placeholder="blur"
+                    />
+                    <Image
+                        className="rounded-md hidden md:block" // Show on laptop (md) screens
+                        src={bannerImg}
+                        alt="hyascka about us"
+                        width={600}
+                        height={381.5}
+                        placeholder="blur"
+                    />
                 </div>
+
+
             </div>
 
 
