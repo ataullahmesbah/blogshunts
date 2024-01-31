@@ -24,7 +24,7 @@ const ExcellenceHub = () => {
                 </div>
 
                 <div className="lg:w-1/2 mt-5 lg:mt-0">
-                    <Image src={hyasckaSuccess} alt="Unlocking Digital Success with HYASCKA" width={600} />
+                    <Image src={hyasckaSuccess} alt="Unlocking Digital Success with HYASCKA" width={600} placeholder="blur" />
                 </div>
 
             </div>
