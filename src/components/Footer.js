@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaFacebook, FaFacebookF, FaFacebookSquare, FaInstagram, FaLinkedin, FaLinkedinIn, FaPinterest } from 'react-icons/fa';
+import { FaFacebook, FaFacebookF, FaFacebookSquare, FaInstagram, FaLinkedin, FaLinkedinIn, FaMedium, FaMediumM, FaPinterest } from 'react-icons/fa';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -11,8 +11,8 @@ const Footer = () => {
                     {/* 1st Section: Logo and Short Info */}
                     <div className="mb-4 lg:mb-0 space-y-3">
                         <div className="flex gap-3 items-center">
-                        <img className="w-6 h-6" src="https://i.ibb.co/LptmthK/image.png" alt="Social Icon 1" />
-                        <h1 className="text-xl font-semibold">Hyascka</h1>
+                            <img className="w-6 h-6" src="https://i.ibb.co/LptmthK/image.png" alt="Social Icon 1" />
+                            <h1 className="text-xl font-semibold">Hyascka</h1>
                         </div>
                         <p className="text-sm">Hyascka is a dynamic digital marketing platform, fostering innovation and expertise in online promotion. Dive into a world of strategic insights, trends, and tools, empowering your digital journey with concise, impactful guidance.</p>
                     </div>
@@ -21,9 +21,9 @@ const Footer = () => {
                     <div className="mb-4 lg:mb-0">
                         <h2 className="text-xl font-semibold mb-2 border-b  border-green-400">Resources</h2>
                         <ul className="text-sm space-y-2">
-                           <Link href='/contactus'> <li className="hover:text-gray-500 cursor-pointer">Contact Us</li></Link>
+                            <Link href='/contactus'> <li className="hover:text-gray-500 cursor-pointer">Contact Us</li></Link>
                             <li className="hover:text-gray-500 cursor-pointer">Blogs</li>
-                           <Link href='/aboutus'> <li className="hover:text-gray-500 cursor-pointer">About Us</li></Link>
+                            <Link href='/aboutus'> <li className="hover:text-gray-500 cursor-pointer">About Us</li></Link>
                             <li className="hover:text-gray-500 cursor-pointer">FAQs</li>
                             <li className="hover:text-gray-500 cursor-pointer">Privacy & Policy</li>
                         </ul>
@@ -54,6 +54,8 @@ const Footer = () => {
                                 <span className='text-base'>LinkedIn</span></Link>
                             <Link href='/' className='flex items-center gap-4 text-xl '><FaPinterest className='' />
                                 <span className='text-base'>Pinterest</span></Link>
+                            <Link href='/' className='flex items-center gap-4 text-xl '><FaMediumM className='' />
+                                <span className='text-base'>Medium</span></Link>
                         </div>
 
 
