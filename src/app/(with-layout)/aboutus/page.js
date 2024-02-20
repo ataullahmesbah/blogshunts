@@ -7,6 +7,7 @@ import Link from "next/link";
 import aboutimg from '@/assets/hyascka-about-us.jpg'
 
 import { FaChevronRight, FaForward } from "react-icons/fa";
+import HyasckaGallery from "@/components/HyasckaGallery";
 
 export const metadata = {
     title: 'About Us | Hyascka',
@@ -58,6 +59,8 @@ const AboutPage = () => {
 
 
             </div>
+
+            <HyasckaGallery />
 
             <div className="flex flex-col lg:flex-row items-center container mx-auto gap-5 lg:gap-20 px-4 lg:px-20 mt-16">
 

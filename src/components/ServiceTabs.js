@@ -49,28 +49,36 @@ const ServiceTabs = () => {
 
     return (
         <Container>
-            <Box sx={{ width: '100%' }}>
-                <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                    <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                        <Tab label="SEO" {...a11yProps(0)} />
-                        <Tab label="Social Media" {...a11yProps(1)} />
-                        <Tab label="Web Development" {...a11yProps(2)} />
-                        <Tab label="Content Strategy" {...a11yProps(2)} />
-                        <Tab label="Email Marketing" {...a11yProps(2)} />
-                        <Tab label="PPC" {...a11yProps(2)} />
-                        
-                    </Tabs>
+            <div className="mt-10">
+
+                <Box sx={{ width: '100%' }}>
+                    <Box sx={{ borderBottom: 2, borderColor: 'divider' }} >
+                        <Tabs sx={{
+                            justifyContent: 'center', textAlign: 'center',
+
+
+                        }} value={value} onChange={handleChange} aria-label="basic tabs example" >
+                            <Tab className='font-semibold hover:bg-blue-100 hover:rounded-md text-black' label="SEO" {...a11yProps(0)} />
+                            <Tab className='font-semibold hover:bg-blue-100 hover:rounded-md text-black' label="Social Media " {...a11yProps(1)} />
+                            <Tab className='font-semibold hover:bg-blue-100 hover:rounded-md text-black' label="Web Development" {...a11yProps(2)} />
+                            <Tab className='font-semibold hover:bg-blue-100 hover:rounded-md text-black' label="Content Strategy" {...a11yProps(3)} />
+                            <Tab className='font-semibold hover:bg-blue-100 hover:rounded-md text-black' label="Email Marketing" {...a11yProps(4)} />
+                            <Tab className='font-semibold hover:bg-blue-100 hover:rounded-md text-black' label="PPC" {...a11yProps(5)} />
+                            <Tab className='font-semibold hover:bg-blue-100 hover:rounded-md text-black' label="Small Business Solutions" {...a11yProps()} />
+
+                        </Tabs>
+                    </Box>
+                    <CustomTabPanel value={value} index={0}>
+                        Item One
+                    </CustomTabPanel>
+                    <CustomTabPanel value={value} index={1}>
+                        Item Two
+                    </CustomTabPanel>
+                    <CustomTabPanel value={value} index={2}>
+                        Item Three
+                    </CustomTabPanel>
                 </Box>
-                <CustomTabPanel value={value} index={0}>
-                    Item One
-                </CustomTabPanel>
-                <CustomTabPanel value={value} index={1}>
-                    Item Two
-                </CustomTabPanel>
-                <CustomTabPanel value={value} index={2}>
-                    Item Three
-                </CustomTabPanel>
-            </Box>
+            </div>
         </Container>
     );
 }

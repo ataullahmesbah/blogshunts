@@ -5,7 +5,7 @@ import Marquee from 'react-fast-marquee';
 const MarqueeSection = () => {
   return (
     <div className='  pb-20'>
-      <p className='text-center text-4xl  font-bold pt-20'>OUR Partnaship</p>
+      <p className='text-center uppercase text-3xl font-bold pt-20'>Brands We’re Lucky to Work With</p>
       <Marquee speed={30} className='mt-12'>
 
         <div className='mx-20'>
