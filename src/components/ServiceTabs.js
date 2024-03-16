@@ -4,6 +4,7 @@ import * as React from 'react';
 import { Box, Container, Tab, Tabs, Typography } from "@mui/material";
 
 import PropTypes from 'prop-types';
+import SEO from './ServicesPortal/SEO';
 
 
 
@@ -69,7 +70,7 @@ const ServiceTabs = () => {
                         </Tabs>
                     </Box>
                     <CustomTabPanel value={value} index={0}>
-                        Item One
+                        <SEO />
                     </CustomTabPanel>
                     <CustomTabPanel value={value} index={1}>
                         Item Two
